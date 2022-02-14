@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Barbara Luz Santos</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+        body {
+            background-image: linear-gradient(45deg, #f9b81b, #2cb3af);
+            font-family: poppins;
+            padding: 10px
+        }
+
+        #logo,
+        h1,
+        h2 {
+            align-items: center;
+            display: flex;
+            line-height: 15px;
+            justify-content: center;
+        }
+
+        #div_text {
+            line-height: 25px;
+            margin-right: 50px;
+        }
+
+        #botao {
+            align-items: center;
+            background-color: #f9b81b;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            display: flex;
+            float: right;
+            font-size: 15px;
+            height: 40px;
+            justify-content: center;
+            padding: 15px 32px;
+            text-decoration: none;
+        }
+
+        #botao:hover {
+            background-color: #3e8e41;
+        }
+
+        footer {
+            float: right;
+            font-weight: bold;
+            font-style: italic;
+            margin-right: 0;
+        }
+    </style>
+</head>
+
+<body id="corpo">
+    <div id="logo">
+        <img src="./Imagens/Logo Keeggo.png">
+    </div>
+    <h1>Training Game</h1>
+    <h2>Minha jornada</h2>
+    <div id="div_text">
+        <ul>
+            <h3>BDD Gherkin</h3>
+            <b>Anotações e curiosidades</b>
+            <ol type="I">
+                <li>BDD é uma técnica de desenvolvimento de software ágil, criado por Dan North, em 2003, com o intuito
+                    de
+                    melhorar a comunicação entre um time de desenvolvimento (PO, QA e DEV) para que todos tenham o mesmo
+                    entendimento sobre uma determinada funcionalidade.</li>
+                <li>O Gherkin é um dos elementos principais quando se trata de BDD em automação. Sua função é padronizar
+                    a
+                    forma de descrever especificações de cenários, baseado na regra de negócio.</li>
+                <li>No Gherkin existem palavras chaves a serem utilizadas para especificar a forma como cada etapa
+                    funciona.
+                    As mais utilizadas são:</li>
+                <ol>
+                    <li><strong>GIVEN: </strong>Dado que - Indica o cenário inicial do teste</li>
+                    <li><strong>WHEN: </strong>Indica uma ação que vai ser executada</li>
+                    <li><strong>THEN: </strong> Indica o que aconteceu ao final da ação</li>
+                </ol>
+                <li>Devemos escrever sempre nossos cenários na terceira pessoa para garantir melhor compreensão de
+                    todos.
+                    Veja um exemplo abaixo:</li><br>
+                <figure>
+                    <img id="exemplo-gherkin" src="./Imagens/exemplo-gherkin.PNG" alt="escrita modelo gherkin">
+                    <figcaption><i>Fonte:
+                            https://automationpanda.com/2017/01/18/should-gherkin-steps-use-first-person-or-third-person/</i>
+                    </figcaption>
+                </figure>
+            </ol>
+        </ul>
+        <ul>
+            <hr>
+            <h3>Páginas em HTML</h3>
+            <b>Anotações e curiosidades</b>
+            <ol type="I">
+                <li> O HTML funciona com Tags, geralmente com abertura e fechamento &lt; &gt; e &lt; / &gt; .</li>
+                <li>Estrutura de uma página HTML:</li>
+                <ol>
+                    <li><strong>&lt; html &gt; &lt; /html &gt;</strong>Esta tag é o elemento básico da estrutura do
+                        HTML.
+                        Assim sendo, ela
+                        conterá todos os
+                        elementos do seu documento. Todo documento HTML deve iniciar e finalizar com essa tag;</li>
+                    <li><strong>&lt; head &gt; &lt; /head &gt;</strong> - Essa tag delimita o cabeçalho do documento.
+                        Não
+                        possui nenhum valor
+                        visível, porém é capaz de transmitir ao navegador diversas informações muito úteis e essenciais
+                        a
+                        uma boa apresentação do seu documento HTML;</li>
+                    <li><strong>&lt; title &gt; &lt; /title &gt;</strong> - Essa tag define o título da sua página, o
+                        nome
+                        que aparecerá na
+                        sua aba, janela ou guia. Por esta razão, a tag >title> é de grande importância para o SEO;</li>
+                    <li><strong>&lt; meta &gt; &lt; /meta &gt;</strong> - Essa tag permite inserir metadados ao seu
+                        documento, no caso acima,
+                        a informação charset=”UTF-8″, que garante a compatibilidade do código com os caracteres de
+                        padrão
+                        latino americano;</li>
+                    <li><strong>&lt; body &gt; &lt; /body &gt;</strong> - Finalmente, a tag que representa o corpo do
+                        documento. Em síntese,
+                        é nessa tag que todos os elementos visíveis do seu site devem ser inseridos.</li>
+                </ol>
+                <li>Principais Tags de uma página HTML:</li>
+                <ol>
+                    <li><strong>&lt; h &gt; &lt; /h &gt;</strong> - Temos as Tags h1, h2, h3, h4, h5 e h5 para destacar
+                        os
+                        títulos de uma página.
+                        Sendo o nível 1 o maior, e o nível 6 o menor em hierarquia. Usamos apenas um h1 para melhores
+                        práticas
+                        de SEO.</li>
+                    <li><strong>&lt; p &gt; &lt; /p &gt;</strong> - Principal tag de texto, compõe um parágrafo;</li>
+                    <li><strong>&lt; span &gt; &lt; /span &gt;</strong> - Apesar de ter uma funcionalidade e
+                        características
+                        parecidas com os parágrafos, costumam ser utilizadas apenas para pequenas informações, como
+                        legendas
+                        de um formulário, legendas de uma imagem, etc. Também pode ser utilizada para formar um
+                        container;
+                    </li>
+                    <li><strong>&lt; b &gt; &lt; /b &gt;</strong> - Transforma o conteúdo em negrito;</li>
+                    <li><strong>&lt; i &gt; &lt; /i &gt;</strong> - Transforma o conteúdo em itálico;</li>
+                    <li><strong> &lt; /br &gt;</strong> - Essa tag não necessita de fechamento, ela executa a função de
+                        quebra de linha;</li>
+                    <li><strong> &lt; /hr &gt;</strong> - Essa tag não necessita de fechamento, ela forma uma linha
+                        horizontal.</li>
+                </ol>
+        </ul>
+    </div>
+    <br>
+    <footer>Trabalho em progresso conforme for avançando no Training Game...</footer>
+    <br>
+    <div>
+        <button id="botao"> <a href="#corpo"> Voltar ao topo</a></button>
+    </div>
+<br><br>
+</body>
+
+</html>
